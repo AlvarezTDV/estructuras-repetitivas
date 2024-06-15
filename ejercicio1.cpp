@@ -10,7 +10,7 @@ int main() {
 		if ( numeros > 0 ) {
 			for ( int i = 1; i <= numeros; i++ ) {
 				multiplos = i * 7;
-				cout << multiplos << endl;
+				cout << "Multiplo nro " << i << ": " << multiplos << endl;
 			}
 			verificador = true;
 		} else {
