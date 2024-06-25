@@ -2,7 +2,7 @@
 using namespace std;
 
 int main () {
-	int numero, intentos;
+	int numero, intentos,i;
 	string verificador;
 	cout << "------------------------------------------------------------" << endl;
 	cout << "Programa que cuenta los numeros positivos hasta uno negativo" << endl;
@@ -11,15 +11,14 @@ int main () {
 		intentos = 1;
 		cout << "Ingresa un numero => ";
 		cin >> numero;
-		while ( numero >= 0 ) {
+		for (i=0;numero>=0;i++) {
 			cout << "Ingresa otro numero => ";
-			cin >> numero;
-			intentos++;
+			cin >> numero;	
 		}
 		cout << "------------------------------------------------------------" << endl;
 		cout << "Ingreso un numero negativo" << endl;
 		cout << "------------------------------------------------------------" << endl;
-		cout << "Los intentos fueron: " << intentos << endl;
+		cout << "Los intentos fueron: " << i << endl;
 		cout << "------------------------------------------------------------" << endl;
 		cout << "Desea volver a ingresar numeros (si o no): ";
 		cin >> verificador;
